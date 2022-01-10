@@ -6,10 +6,10 @@ Major changes are:
 1. changed to use with ESP32
 2. changed to nanoFramework.System.Device.WiFi.1.4.0-preview.6 package naming style
 3. add very dirty implementation of DHCP server when in AP mode to make it easy to connect from mobile
-   * - there is some limitations in DHCP it is not store any client address information, whenever make new connection it will assign next IP address
-   * - first dynamic IP address start with next to AP IP address
-   * - it is not sending gateway IP to Client to not block mobile device network connection while connected to AP
-   * - there is some changes in WebServer implementation WiFi config moved to http://192.168.4.1/config
+   *  there is some limitations in DHCP it is not store any client address information, whenever make new connection it will assign next IP address
+   *  first dynamic IP address start with next to AP IP address
+   *  it is not sending gateway IP to Client to not block mobile device network connection while connected to AP
+   *  there is some changes in WebServer implementation WiFi config moved to http://192.168.4.1/config
 
 -- rest part of readme is not changed
 
