@@ -32,7 +32,7 @@ namespace WiFiAP
         public static bool Configure(string ssid, string password)
         {
             // And we have to force connect once here even for a short time
-            var success = WifiNetworkHelper.ConnectDhcp(ssid, password, token: new CancellationTokenSource(10000).Token);
+            var success = WiFiNetworkHelper.ConnectDhcp(ssid, password, token: new CancellationTokenSource(10000).Token);
             //var success = NetworkHelper.ConnectWifiDhcp(ssid, password, token: new CancellationTokenSource(10000).Token);
             Debug.WriteLine($"Connection is {success}");
             Wireless80211Configuration wconf = GetConfiguration();
