@@ -27,7 +27,8 @@ namespace WiFiAP
         static GpioPin led;
         public static void Main()
         {
-            Debug.WriteLine("Welcome to WiFI Soft AP world!");
+            Debug.WriteLine("Welcome to nF...");
+            Debug.WriteLine($"Main FW: {SystemInfo.Version}");
 
             GpioPin setupButton = new GpioController().OpenPin(SETUP_PIN, PinMode.InputPullUp);
 
